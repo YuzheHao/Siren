@@ -1,0 +1,33 @@
+.flowup {
+    height: 80;
+    width: 200;
+    padding: 3;
+    padding-left: 10;
+    border-radius: 4px;
+
+    font-family: "Source Code Pro", \5FAE\8F6F\96C5\9ED1;
+    font-size: 36px;
+
+    color: #ff5000;
+    background: #333333 !important;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flowup p {
+    transition: 0.3s;
+}
+
+.flowup:hover {
+    background: #535355 !important;
+}
+
+.flowup:hover p {
+    transform: translate(80px, -48px);
+    font-size: 74px;
+    font-weight: bolder;
+}

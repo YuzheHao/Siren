@@ -1,4 +1,4 @@
-function activate(video_path) {
+function activate(RecordName) {
 
     var bv = new Bideo();
     var videox = document.querySelector('#background_video');
@@ -7,8 +7,8 @@ function activate(video_path) {
         $("#background_video")[0].removeChild($("#background_video")[0].firstChild)
     };
 
-
     bv.init({
+
         // Video element
         videoEl: videox,
 
@@ -28,7 +28,7 @@ function activate(video_path) {
         // Array of objects containing the src and type
         // of different video formats to add
         src: [{
-            src: video_path,
+            src: "/Users/Yuzhe/Music/Monster\ Siren\ Records/" + RecordName + ".mp4",
             type: 'video/mp4'
         }],
 
@@ -38,13 +38,3 @@ function activate(video_path) {
         // }
     });
 };
-
-// function change_records(record) {
-//     $("#background_video")[0].remove(document.querySelector('#background_video').firstChild)
-//     bv.init({
-//         src: [{
-//             src: video_path,
-//             type: 'video/mp4'
-//         }],
-//     });
-// }
