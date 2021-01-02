@@ -15,71 +15,18 @@
 
     color: #f0f0f0;
     background: #333333;
-    opacity: 0%
+    opacity: 30%;
+
+    display: hidden;
+
 }
 
 #layout_menu:hover .record {
-    opacity: 30%;
+    display: flex;
 }
 
-.record#No001:hover {
-    font-size: 28px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No002:hover {
-    font-size: 28px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No003:hover {
-    font-size: 30px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No004:hover {
+.record:hover {
     font-size: 22px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No005:hover {
-    font-size: 22px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No006:hover {
-    font-size: 22px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No007:hover {
-    font-size: 28px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No008:hover {
-    font-size: 28px;
-    opacity: 60%;
-    height: 80px;
-    width: 400px;
-}
-
-.record#No009:hover {
-    font-size: 28px;
     opacity: 60%;
     height: 80px;
     width: 400px;
