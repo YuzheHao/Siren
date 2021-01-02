@@ -29,9 +29,8 @@ function activate(RecordName) {
         // Array of objects containing the src and type
         // of different video formats to add
         src: [{
-            // src: "/Users/Yuzhe/Music/Monster\ Siren\ Records/" + RecordName + ".mp4",
-
-            src: "../resource/" + RecordName + ".mp4",
+            src: "/Users/Yuzhe/Music/Monster\ Siren\ Records/" + RecordName + ".mp4",
+            // src: "../resource/" + RecordName + ".mp4",
             type: 'video/mp4'
         }],
 
