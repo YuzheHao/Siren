@@ -15,19 +15,17 @@
 
     color: #f0f0f0;
     background: #333333;
-    opacity: 30%;
-
-    display: hidden;
-
+    opacity: 0%;
 }
 
 #layout_menu:hover .record {
-    display: flex;
+    opacity: 50%;
 }
 
 .record:hover {
-    font-size: 22px;
+    font-size: 20px;
     opacity: 60%;
     height: 80px;
     width: 400px;
+    opacity: 80% !important;
 }
