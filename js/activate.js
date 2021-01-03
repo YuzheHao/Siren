@@ -3,6 +3,8 @@ function activate(RecordName) {
     var bv = new Bideo();
     var videox = document.querySelector('#background_video');
     var bodyx = document.querySelector('body');
+    var playx = document.querySelector('#play');
+    var pausex = document.querySelector('#pause');
     // var coverx = document.querySelector('#video_cover').
     if ($("#background_video")[0].childElementCount > 0) {
         $("#background_video")[0].removeChild($("#background_video")[0].firstChild)
@@ -23,8 +25,8 @@ function activate(RecordName) {
 
         isMobile: window.matchMedia('(max-width: 768px)').matches,
 
-        // playButton: document.querySelector('#play'),
-        // pauseButton: document.querySelector('#pause'),
+        playButton: playx,
+        pauseButton: pausex,
 
         // Array of objects containing the src and type
         // of different video formats to add
@@ -41,27 +43,15 @@ function activate(RecordName) {
     });
 };
 
-var No001 = "SPEED OF LIGHT";
-var No002 = "Boiling Blood";
-var No003 = "Renegade";
-var No004 = "Sparkling Hydraulics";
-var No005 = "El Brillo Solitario";
-var No006 = "Evolutionary Mechanization";
-var No007 = "Reconnection";
-var No008 = "Confront";
-var No009 = "Lithos";
-
-
-// <p>💿···</p>
-
 function switch_to(RecordCode) {
     for (var i = $("div.record").length - 1; i >= 0; i--) {
         if ($("div.record")[i].childElementCount > 0) {
             $("div.record")[i].removeChild($("div.record")[i].firstChild)
         };
     }
-    $("#" + RecordCode)[0].innerHTML = "<p>💿··· </p>" + $("#" + RecordCode)[0].innerHTML
 
-    RecordName = eval(RecordCode)
-    activate(RecordName)
+    activate($("#" + RecordCode)[0].textContent)
+    $("#" + RecordCode)[0].innerHTML = "<p>💿&nbsp</p>" + $("#" + RecordCode)[0].innerHTML
+
+
 }
