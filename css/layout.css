@@ -1,7 +1,17 @@
 #layout_menu {
-    width: 200px;
-    height: 2000px;
+    width: 400px;
+    height: 800px;
     transition: 0.3s;
 
+    z-index: 1;
+    direction: rtl;
+}
+
+#layout_menu {
+    width: 400px;
+    height: 800px;
+    transition: 0.3s;
+    overflow: scroll;
+    direction: ltr;
     z-index: 1;
 }
